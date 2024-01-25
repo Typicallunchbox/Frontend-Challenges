@@ -1,7 +1,9 @@
-* { 
+*,
+*::before,
+*::after { 
     box-sizing: border-box; 
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
 }
 
 h1,
@@ -54,6 +56,20 @@ h3 {
     color: inherit;
 }
 
+// For setting theme choice based on user
+// @media (prefers-color-scheme: light) {
+//     :root {
+//         color: #213547;
+//         background-color: #ffffff;
+//     }
+//     a:hover {
+//         color: #747bff;
+//     }
+//     button {
+//         background-color: #f9f9f9;
+//     }
+// }
+
 .btn{
 
 }
@@ -64,8 +80,9 @@ h3 {
 
 /* DEFAULT PAGE LOGIC */
 .page{
-    width: 70%;
-    margin: 0 auto;
+    // width: 90%;
+    width: min(1160px, 100% - 4rem);
+    margin-inline: auto;
 }
 
 
