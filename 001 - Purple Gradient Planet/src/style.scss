@@ -1,0 +1,78 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// Add each font
+// @font-face {
+//     font-family: '';
+//     src: url();
+// }
+
+:root {
+    /*Colours */
+    --primary-colour: #222222;
+    --secondary-colour: #E2E2E2;
+    --tertiary-colour: #FBFBFB;
+}
+
+/* DEFAULTS */
+p {
+    font-family: 'SourceSansPro-light', sans-serif;
+    font-size: 20px;
+    color: inherit;
+}
+
+a {
+    font-family: 'Vonique-92', sans-serif;
+    font-size: 35px;
+    text-decoration: none;
+    color: inherit;
+}
+
+h2{
+    font-family: 'Vonique-64-bold-italic', sans-serif;
+    font-size: 35px;
+    color: inherit;
+}
+
+h3 {
+    font-family: 'Vonique-64', sans-serif;
+    font-size: 25px;
+    color: inherit;
+}
+
+.btn{
+
+}
+
+.btn:hover{
+    
+}
+
+/* DEFAULT PAGE LOGIC */
+.page{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+// MOBILE DESIGN FIRST
+
+/* RESPONSIVE */
+
+// MOBILE DESIGN FIRST
+// MOBILE DESIGN FIRST
+// MOBILE DESIGN FIRST
+// MOBILE DESIGN FIRST
+// MOBILE DESIGN FIRST
