@@ -1,19 +1,27 @@
-*,
-*::before,
-*::after { 
-    box-sizing: border-box; 
-    // margin: 0;
-    // padding: 0;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-p {
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
 }
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+    font-size: var(--fs-s);
+}
+
+img, picture, svg, video{
+    display: block;
+    max-width: 100%;
+}
+
 
 // Add each font
 // @font-face {
@@ -28,31 +36,57 @@ p {
     --primary-colour: #BA32F2;
     --secondary-colour: #631B9A;
     --tertiary-colour: #2C0A54;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --fs-xl: 5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fs-300: .75rem;
 }
 
 /* DEFAULTS */
+h1,
+h2,
+h3,
 p {
-    font-family: 'SourceSansPro-light', sans-serif;
-    font-size: 20px;
-    color: inherit;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+p {
+    font-family: '', sans-serif;
+    font-size: var(--fs-400);
+    // color: inherit;
 }
 
 a {
-    font-family: 'Vonique-92', sans-serif;
-    font-size: 35px;
+    font-family: '', sans-serif;
+    font-size: var(--fs-s);
     text-decoration: none;
-    color: inherit;
+    // color: inherit;
+}
+
+h1{
+    font-family: '', sans-serif;
+    font-size: var(--fs-xl);
+    // color: inherit;
 }
 
 h2{
-    font-family: 'Vonique-64-bold-italic', sans-serif;
-    font-size: 35px;
-    color: inherit;
+    font-family: '', sans-serif;
+    font-size: var(--fs-l);
+    // color: inherit;
 }
 
 h3 {
-    font-family: 'Vonique-64', sans-serif;
-    font-size: 25px;
+    font-family: '', sans-serif;
+    font-size: var(--fs-m);
     color: inherit;
 }
 
@@ -80,9 +114,13 @@ h3 {
 
 /* DEFAULT PAGE LOGIC */
 .page{
-    // width: 90%;
-    width: min(1160px, 100% - 4rem);
-    margin-inline: auto;
+    width: min(100vw, 100% - 4rem);    
+    // margin-inline: auto;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
 }
 
 
